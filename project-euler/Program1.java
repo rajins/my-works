@@ -15,14 +15,14 @@ public class Program1 {
 
     long n = scanner.nextLong();
     long result = 0;
-    while (n > 0) {
-      for (int i = 1; i <= n; i++) {
+    if (n > 0) {
+      for (int i = 1; i < n; i++) {
         if (i % 3 == 0 || i % 5 == 0) {
           result = result + i;
         }
       }
-      System.out.println("Result is: "+result);
     }
+    System.out.println("Result is: "+result);
   }
 }
 
